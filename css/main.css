@@ -1,0 +1,144 @@
+
+a{
+    text-decoration:none ;
+}
+ul{
+    list-style: none;
+}
+
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  @media (min-width: 576px) {
+    .container {
+      max-width: 536px;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 728px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 952px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1160px;
+    }
+  }
+
+.header{
+    .mega{
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+        display: none;
+    }
+}
+ @media(max-width:728px ){
+.header-landing {
+    .header{
+        position: relative;
+        
+        ul{
+            position: absolute;
+        top:80px;
+        left: -1000px;
+        background-color: #c5c5c5ce;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        width: 680px;
+        align-items: start;
+        z-index: 100;
+        transition: .7s;
+
+
+        }
+        .mega{
+            display: block;
+        }
+    }
+    .landing{
+        p{
+            font-size: 30px;
+        }
+        span{
+            font-size: 15px;
+        }
+        .boxes{
+           display: none;
+        }
+    }
+}
+ }
+
+ @media(max-width: 575px){
+    .header-landing{
+        .landing{
+            p{
+                font-size: 25px;
+            }
+            span{
+                font-size: 13px;
+            }
+        }
+    }
+ }
+ @media(max-width: 507px){
+    .header-landing{
+        .landing{
+            p{
+                font-size: 15px;
+            }
+            span{
+                font-size: 11px;
+               
+            }
+        }
+    }
+ }
+
+ .main-section{
+    .left{
+        .button{
+            padding:10px 25px;
+            border-bottom: 1px solid #3b3b3b;
+            border-right: 1px solid #3b3b3b;
+            cursor: pointer;
+        }
+    }
+ }
+ @media(max-width:1160px ){
+    .header-landing{
+        .landing{
+            .boxes{
+                display: none;
+            }
+        }
+    }
+    .main-section{
+    .left{
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .boxes{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+        .right{
+            display: none;
+        }
+    }
+ }
